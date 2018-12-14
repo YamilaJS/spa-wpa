@@ -1,0 +1,17 @@
+
+<section class="home">
+  <div>
+    <Menu/>
+  <ul>
+    <li v-for="(article, index ) in articles" :key="'article'+index">
+        <h2 v-text="article.date"/>
+        <h1 v-text="article.title"/>
+        <h3 v-text="article.subTitle"/>
+        <h4 v-text="article.description"/>
+        <img :src="article.banner"/><br>
+        <router-link :to="createLink(article.date, article.title)">Ver</router-link>
+    </li>
+  </ul>
+  </div>
+</section>
+
