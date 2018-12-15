@@ -1,35 +1,32 @@
 <template>
  <div>
-{{$route.params.date}}
-{{$route.params.title}}
+
+  <label>title:</label>{{getArticle.title}}<br>
+  <label>text:</label>{{getArticle.text}}
+
  </div>
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
-
+import { mapActions, mapGetters } from "vuex";
+import { setTimeout } from 'timers';
 
 export default {
   components: {
     
   },
   methods: {
-   ...mapActions(['getArticleDetail']),
+   ...mapActions(['seeArticle']),
    disFormartLink(titleUrl){
-     var tituloOriginal = titleUrl.replace(/_/g,' ');
-     return `article/${tituloOriginal}`
+     return titleUrl.replace(/_/g,' ');
    }
   },
-  computed: {
-  },
+  computed: mapGetters(['getArticle']),
   mounted(){
-    this.getArticleDetail({
-      date:this.$route.params.date, 
-      title:this.$route.params.title
+    this.seeArticle({
+      date: this.$route.params.date,
+      title: this.disFormartLink(this.$route.params.title)
     })
   },
-  created() {
-    console.log(this.disFormartLink('leo_es_un_gato'))
-  }
 };
 </script>

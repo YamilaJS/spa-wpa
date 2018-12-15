@@ -10,13 +10,13 @@ export default {
     Home
   },
   methods: {
-    ...mapActions(["getHomeArticles"])
+    ...mapActions(["loadArticleList"])
   },
   computed: mapState({
     articles: 'articles'
   }),
   created() {
-    this.getHomeArticles();
+    this.loadArticleList();
   }
 };
 </script>

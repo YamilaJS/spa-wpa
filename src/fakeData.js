@@ -22,7 +22,7 @@ export default {
             date:'2018-04-07',
         }
     ],
-    fakeFetchDetail: [
+    fakeFetchContent: [
         {
             title:'Este es un Título',
             subTitle:'Esto es un subtítulo',
