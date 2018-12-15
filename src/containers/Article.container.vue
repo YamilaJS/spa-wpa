@@ -1,8 +1,8 @@
 <template>
  <div>
 
-  <label>title:</label>{{getArticle.title}}<br>
-  <label>text:</label>{{getArticle.text}}
+  <label>title:</label>{{article.title}}<br>
+  <label>text:</label>{{article.text}}<br>
 
  </div>
 </template>
@@ -21,7 +21,7 @@ export default {
      return titleUrl.replace(/_/g,' ');
    }
   },
-  computed: mapGetters(['getArticle']),
+  computed: mapGetters({article:'getArticle'}),
   mounted(){
     this.seeArticle({
       date: this.$route.params.date,

@@ -13,7 +13,7 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    getArticle: state => {  
+    getArticle: state => {
       const articleFinded = state.articles.find(article => {
         return article.title === state.findParams.title && article.date === state.findParams.date
       })
@@ -23,8 +23,8 @@ export default new Vuex.Store({
         description: articleFinded.description,
         banner: articleFinded.banner,
         date: articleFinded.date,
-        text: '',
-        firm: ''
+        text: articleFinded.text ? articleFinded.text : '',
+        firm: articleFinded.firm ? articleFinded.firm : ''
       }
       else return {
         title: '',
@@ -43,18 +43,23 @@ export default new Vuex.Store({
       commit('addArticleList', articlesFecheds)
       return
     },
-    async seeArticle({ commit, dispatch, getters, state }, findParams) {
+    async seeArticle({ commit, dispatch, getters, state }, findParams = {
+      date: '',
+      title: ''
+    }) {
       commit('setFindParam', findParams)
-      if (!state.articles.length) {
-        await dispatch('loadFullArticle', findParams)
-      } else {
-          
+      if (!getters.getArticle.title) {
+        const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
+        commit('addFullArticle', fullArticleFetched)
+      } else if (getters.getArticle.title && !getters.getArticle.text) {
+        const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
+        commit('addContentArticle', {
+          date: findParams.date,
+          title: findParams.title,
+          text: fullArticleFetched.text,
+          firm: fullArticleFetched.firm
+        })
       }
-      return
-    },
-    async loadFullArticle({ commit }, findParams) {
-      const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
-      commit('addFullArticle', fullArticleFetched)
       return
     },
   },
@@ -63,16 +68,29 @@ export default new Vuex.Store({
       state.articles = articles
     },
     addFullArticle(state, fullArticle) {
+      console.log("leo")
+      console.log(fullArticle)
       state.articles.push(fullArticle)
     },
     setFindParam(state, findParams) {
       state.findParams = {
         date: findParams.date,
         title: findParams.title
-      };
+      }
     },
-    addContentArticle() {
-
+    addContentArticle(state, payload = {
+      date: '',
+      title: '',
+      text: '',
+      firm: ''
+    }) {
+      const indexFinded = state.articles.findIndex(
+        article => article.title === payload.title && article.date === payload.date
+      )
+      const newArticles = [...state.articles]
+      newArticles[indexFinded].text = payload.text
+      newArticles[indexFinded].firm = payload.firm
+      state.articles = newArticles
     }
   }
 })

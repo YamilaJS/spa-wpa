@@ -1,8 +1,20 @@
 import fakeData from './fakeData'
 
 export default {
-    fetchArticleList: async () => fakeData.fakeFetchArticles,
-    async fetchFullArticle(date, title) {
-        return fakeData.fakeFetchContent.find(article => article.date === date && article.title === title)
+    fetchArticleList() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(fakeData.fakeFetchArticles)
+            }, 2000)
+        })
+    },
+    fetchFullArticle(date, title) {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                const findedFullArticle = fakeData.fakeFetchContent.find(article => article.date === date && article.title === title)
+                resolve(findedFullArticle)
+            }, 1500)
+        })
+
     }
 }
