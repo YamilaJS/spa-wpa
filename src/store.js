@@ -23,7 +23,7 @@ export default new Vuex.Store({
         description: articleFinded.description,
         banner: articleFinded.banner,
         date: articleFinded.date,
-        text: articleFinded.text ? articleFinded.text : '',
+        content: articleFinded.content ? articleFinded.content : '',
         firm: articleFinded.firm ? articleFinded.firm : ''
       }
       else return {
@@ -32,7 +32,7 @@ export default new Vuex.Store({
         description: '',
         banner: '',
         date: '',
-        text: '',
+        content: [],
         firm: ''
       }
     }
@@ -51,12 +51,12 @@ export default new Vuex.Store({
       if (!getters.getArticle.title) {
         const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
         commit('addFullArticle', fullArticleFetched)
-      } else if (getters.getArticle.title && !getters.getArticle.text) {
+      } else if (getters.getArticle.title && !getters.getArticle.content.lenght) {
         const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
         commit('addContentArticle', {
           date: findParams.date,
           title: findParams.title,
-          text: fullArticleFetched.text,
+          content: fullArticleFetched.content,
           firm: fullArticleFetched.firm
         })
       }
@@ -81,14 +81,14 @@ export default new Vuex.Store({
     addContentArticle(state, payload = {
       date: '',
       title: '',
-      text: '',
+      content: [],
       firm: ''
     }) {
       const indexFinded = state.articles.findIndex(
         article => article.title === payload.title && article.date === payload.date
       )
       const newArticles = [...state.articles]
-      newArticles[indexFinded].text = payload.text
+      newArticles[indexFinded].content = payload.content
       newArticles[indexFinded].firm = payload.firm
       state.articles = newArticles
     }
