@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HomeContainer from '@/containers/Home.container.vue'
-import ArticleContainer from '@/containers/Article.container.vue'
-import Menu from '@/components/Menu'
+import readArticle from '@/views/readArticle'
+import goHome from '@/views/goHome'
+import seePresentation from '@/views/seePresentation'
+
+// falta este
+import openMenu from '@/views/openMenu'
 
 Vue.use(Router)
 
@@ -12,21 +15,31 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
-      component: HomeContainer
+      component: goHome
     },
     {
       path: '/article/:date/:title',
       name: 'article',
-      component: ArticleContainer
+      component: readArticle
     },
     {
       path: '/menu',
       name: 'menu',
-      component: Menu
+      component: openMenu
     },
-    
+    {
+      path: '/presentation',
+      name: 'presentation',
+      component: seePresentation
+    },
+    {
+      path: '/',
+      name: 'presentation',
+      component: seePresentation
+    },
+
     /*
     {
       path: '/about',

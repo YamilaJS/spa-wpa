@@ -1,19 +1,6 @@
+import MenuContainer from '@/containers/Menu.container.vue'
+
 export default {
   name: 'open-menu',
-  components: {},
-  props: [],
-  data () {
-    return {
-
-    }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
+  components: {MenuContainer},
 }
