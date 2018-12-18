@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 import HomeContainer from '@/containers/Home.container.vue'
 import ArticleContainer from '@/containers/Article.container.vue'
-
+import Menu from '@/components/Menu'
 
 Vue.use(Router)
 
@@ -21,6 +21,12 @@ export default new Router({
       name: 'article',
       component: ArticleContainer
     },
+    {
+      path: '/menu',
+      name: 'menu',
+      component: Menu
+    },
+    
     /*
     {
       path: '/about',

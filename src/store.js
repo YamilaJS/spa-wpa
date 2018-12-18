@@ -43,7 +43,7 @@ export default new Vuex.Store({
       commit('addArticleList', articlesFecheds)
       return
     },
-    async seeArticle({ commit, dispatch, getters, state }, findParams = {
+    async seeArticle({ commit, getters }, findParams = {
       date: '',
       title: ''
     }) {
@@ -68,8 +68,6 @@ export default new Vuex.Store({
       state.articles = articles
     },
     addFullArticle(state, fullArticle) {
-      console.log("leo")
-      console.log(fullArticle)
       state.articles.push(fullArticle)
     },
     setFindParam(state, findParams) {
