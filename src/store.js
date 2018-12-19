@@ -107,7 +107,7 @@ const store = {
     },
 
 
-    addContentArticle(state, payload = {
+    addContentArticle(state, content = {
 
       date: '',
       title: '',
@@ -117,11 +117,11 @@ const store = {
     }) {
 
       const indexFinded = state.articles.findIndex(
-        article => article.title === payload.title && article.date === payload.date
+        article => article.title === content.title && article.date === content.date
       )
       const newArticles = [...state.articles]
-      newArticles[indexFinded].content = payload.content
-      newArticles[indexFinded].firm = payload.firm
+      newArticles[indexFinded].content = content.content
+      newArticles[indexFinded].firm = content.firm
       state.articles = newArticles
       return
     }
