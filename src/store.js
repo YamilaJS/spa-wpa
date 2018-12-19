@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import services from './services'
+import ArticleModel from './models/ArticleModel'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const store = {
   state: {
     articles: [],
     findParams: {
@@ -67,8 +68,8 @@ export default new Vuex.Store({
     addArticleList(state, articles) {
       state.articles = articles
     },
-    addFullArticle(state, fullArticle) {
-      state.articles.push(fullArticle)
+    addFullArticle(state, fullArticle) { 
+      fullArticle instanceof ArticleModel && state.articles.push(fullArticle)
     },
     setFindParam(state, findParams) {
       state.findParams = {
@@ -91,4 +92,6 @@ export default new Vuex.Store({
       state.articles = newArticles
     }
   }
-})
+}
+
+export default new Vuex.Store(store)

@@ -1,6 +1,6 @@
 import fakeData from './fakeData'
-
-export default {
+import ArticleModel from './models/ArticleModel'
+const ArticleServices = {
     fetchArticleList() {
         return new Promise((resolve) => {
             setTimeout(() => {
@@ -8,13 +8,14 @@ export default {
             }, 2000)
         })
     },
-    fetchFullArticle(date, title) {
-        return new Promise((resolve) => {
-            setTimeout(() => {
+    async fetchFullArticle(date, title) {
+    
                 const findedFullArticle = fakeData.fakeFetchContent.find(article => article.date === date && article.title === title)
-                resolve(findedFullArticle)
-            }, 1500)
-        })
+                const fullArticleModeled = new ArticleModel(findedFullArticle)
+                return fullArticleModeled
+        
 
     }
 }
+
+export default ArticleServices
