@@ -9,11 +9,10 @@ const ArticleServices = {
         })
     },
     async fetchFullArticle(date, title) {
-    
-                const findedFullArticle = fakeData.fakeFetchContent.find(article => article.date === date && article.title === title)
-                const fullArticleModeled = new ArticleModel(findedFullArticle)
-                return fullArticleModeled
-        
+
+        const findedFullArticle = fakeData.fakeFetchContent.find(article => article.date === date && article.title === title)
+        const fullArticleModeled = new ArticleModel(findedFullArticle)
+        return fullArticleModeled
 
     }
 }

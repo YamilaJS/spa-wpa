@@ -15,6 +15,7 @@ const store = {
   },
   getters: {
     getArticle: state => {
+
       const articleFinded = state.articles.find(article => {
         return article.title === state.findParams.title && article.date === state.findParams.date
       })
@@ -36,18 +37,24 @@ const store = {
         content: [],
         firm: ''
       }
+
     }
   },
   actions: {
     async loadArticleList({ commit }) {
+
       const articlesFecheds = await services.fetchArticleList()
       commit('addArticleList', articlesFecheds)
       return
+
     },
     async seeArticle({ commit, getters }, findParams = {
+
       date: '',
       title: ''
+
     }) {
+
       commit('setFindParam', findParams)
       if (!getters.getArticle.title) {
         const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
@@ -62,27 +69,53 @@ const store = {
         })
       }
       return
+
     },
   },
   mutations: {
-    addArticleList(state, articles) {
+
+
+    addArticleList(state, articles = []) {
+
       state.articles = articles
+      return
+
     },
-    addFullArticle(state, fullArticle) { 
+
+
+    addFullArticle(state, fullArticle = new ArticleModel()) {
+
       fullArticle instanceof ArticleModel && state.articles.push(fullArticle)
+      return
+
     },
-    setFindParam(state, findParams) {
+
+
+    setFindParam(state, findParams = {
+
+      date: '',
+      title: ''
+
+    }) {
+
       state.findParams = {
         date: findParams.date,
         title: findParams.title
       }
+      return
+
     },
+
+
     addContentArticle(state, payload = {
+
       date: '',
       title: '',
       content: [],
       firm: ''
+
     }) {
+
       const indexFinded = state.articles.findIndex(
         article => article.title === payload.title && article.date === payload.date
       )
@@ -90,7 +123,9 @@ const store = {
       newArticles[indexFinded].content = payload.content
       newArticles[indexFinded].firm = payload.firm
       state.articles = newArticles
+      return
     }
+
   }
 }
 
