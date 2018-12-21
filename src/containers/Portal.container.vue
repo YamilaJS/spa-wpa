@@ -1,13 +1,13 @@
 <template>
-  <Home :articles="articles"/>
+  <Portal :articles="articles"/>
 </template>
 <script>
 import { mapActions, mapState } from "vuex";
-import Home from "@/components/Home";
+import Portal from "@/components/Portal";
 
 export default {
   components: {
-    Home
+    Portal
   },
   methods: {
     ...mapActions(["loadArticleList"])

@@ -1,5 +1,5 @@
 export default {
-  name: 'home',
+  name: 'portal',
   components: {},
   props: ['articles'],
 

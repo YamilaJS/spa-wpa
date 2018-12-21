@@ -1,5 +1,4 @@
-
-
+import validator from '../utils/validator';
 
 function ArticleModel(
     
@@ -14,25 +13,6 @@ function ArticleModel(
     }
 
 ) {
-
-
-    var validator = {
-        range(v) {
-            return function (c) {
-                return c(v) ? true : false
-            }
-        },
-        num(n) {
-            return typeof n === 'number' ? this.range(n) : false
-        },
-        str(s) {
-            return typeof s === 'string' ? this.range(s) : false
-        },
-        bool(b) {
-            return typeof b === 'boolean' ? this.range(b) : false
-        }
-    }
-
 
     if (validator.str(param.date)(date => date)) this.date = param.date
     else throw ''
@@ -54,7 +34,8 @@ function ArticleModel(
     
     if (validator.str(param.firm)(firm => firm)) this.firm = param.firm
     else throw ''
-    
+
 }
+
 
 export default ArticleModel
