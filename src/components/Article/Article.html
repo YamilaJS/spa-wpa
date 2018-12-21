@@ -1,49 +1,48 @@
-
 <section class="article">
-  <article>
-    <Header
+    <Header 
       :date="article.date" 
-      :banner="article.banner"
+      :banner="article.banner" 
       :title="article.title"
-      :subtitle="article.subtitle"
-      :description="article.description"/>
+      :subTitle="article.subTitle"
+      :description="article.description"
+    />
+  
     <div v-for="(item, index) in article.content" :key="'contentItem'+index">
-     
-      <p v-if="item.type==='text'" v-text="item.value"/>
-      <q v-if="item.type==='quote'" v-text="item.value"/>
+      <p v-if="item.type==='text'" v-text="item.value" />
+      <q v-if="item.type==='quote'" v-text="item.value" />
       <quote v-if="item.type==='quoteFirm'">
         <p v-text="item.value1"></p>
-        <footer v-text="item.value2"/>
+        <footer v-text="item.value2" />
       </quote>
       <img v-if="item.type==='image'" :src="item.value">
       <figure v-if="item.type==='photo'">
         <img :src="item.value1">
-        <description v-text="item.value2"/>
+        <description v-text="item.value2" />
       </figure>
-      <h4 v-if="item.type==='title'" v-text="item.value"/>
-      <h6 v-if="item.type==='subTitle'" v-text="item.value"/>
-      <h7 v-if="item.type==='description'" v-text="item.value"/>
-      <a v-if="item.type==='link'" :h-ref="item.value"/>
+      <h4 v-if="item.type==='title'" v-text="item.value" />
+      <h6 v-if="item.type==='subTitle'" v-text="item.value" />
+      <h7 v-if="item.type==='description'" v-text="item.value" />
+      <a v-if="item.type==='link'" :h-ref="item.value" />
       <hr v-if="item.type==='separator'">
-      <div v-if="item.type==='frame'" v-text="item.value"/>
-      <div v-if="item.type==='block'" v-text="item.value"/>
-      <div v-if="item.type==='bold'" v-text="item.value"/>
-      <div v-if="item.type==='note'" v-text="item.value"/>
+      <div v-if="item.type==='frame'" v-text="item.value" />
+      <div v-if="item.type==='block'" v-text="item.value" />
+      <div v-if="item.type==='note'" v-text="item.value" />
       <ul v-if="item.type==='list'">
-        <li v-for="(value, index) in item.value" v-text="value" :key="'li'+index"/>
+        <li v-for="(value, index) in item.value" v-text="value" :key="'li'+index" />
       </ul>
       <ol v-if="item.type==='orderList'">
-        <li v-for="(value, index) in item.value" v-text="value" :key="'li'+index"/>
+        <li v-for="(value, index) in item.value" v-text="value" :key="'li'+index" />
       </ol>
       <div v-if="item.type==='detail'">
         <div v-for="(value, index) in item.value" :key="'detail'+index">
-          <label v-text="value.value1"/>
-          <a v-text="value.value2"/>
+          <label v-text="value.value1" />
+          <a v-text="value.value2" />
         </div>
       </div>
-    
+      <Bold
+      :type="item.type"
+      :value="item.value"
+     />
     </div>
-    <footer v-text="article.form"/>
-  </article>
-</section>
-
+    <footer v-text="article.form" />
+  </section>

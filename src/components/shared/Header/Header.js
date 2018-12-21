@@ -1,7 +1,7 @@
 export default {
-  name: 'header',
+  name: 'Header',
   components: {},
-  props: ['date','banner','title','subtitle','description'],
+  props: ['date','banner','title','subTitle','description'],
   data () {
     return {
 

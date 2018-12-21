@@ -1,7 +1,7 @@
 export default {
   name: 'bold',
   components: {},
-  props: [],
+  props:['type','value'],
   data () {
     return {
 

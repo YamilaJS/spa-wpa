@@ -1,7 +1,8 @@
 import Header from "@/components/shared/Header";
+import Bold from "@/components/shared/Bold";
 export default {
-  name: 'article',
-  components: {Header},
+  name: 'Article',
+  components: {Header, Bold},
   props: ['article'],
   data () {
     return {
