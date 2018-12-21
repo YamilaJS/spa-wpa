@@ -28,7 +28,7 @@ export default {
             subTitle: 'Esto es un subtítulo',
             description: 'Esto es una descripción del artículo',
             content: [
-                { type: 'text', value: 'Esto es el textooo' },
+                { type: 'text', value: 'Esto es el textoo' },
                 { type: 'quote', value: 'Esto es una cita' }
             ],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
@@ -39,7 +39,7 @@ export default {
             title: 'Este es otro título',
             subTitle: 'Este es otro subtítulo',
             description: 'Esto es otra descripción del artículo',
-            content: [{ type: 'text', value: 'Esto es el textooo' }],
+            content: [{ type: 'text', value: 'Esto es el texto' }],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
             date: '2018-03-06',
             firm: 'Esto es una firma'
@@ -48,7 +48,7 @@ export default {
             title: 'Este es un tercer título',
             subTitle: 'Este es un tercer subtítulo',
             description: 'Esto es una tercera descripción del artículo',
-            content: [{ type: 'text', value: 'Esto es el textooo' }],
+            content: [{ type: 'text', value: 'Esto es el texto' }],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
             date: '2018-04-07',
             firm: 'Esto es una firma'
