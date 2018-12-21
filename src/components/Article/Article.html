@@ -1,18 +1,14 @@
 
 <section class="article">
   <article>
-    <header>
-      <div>
-        <data v-text="article.date"/>
-        <img :src="article.banner">
-        <h1 v-text="article.title"/>
-        <h2 v-text="article.subTitle"/>
-      </div>
-      <h3>
-        <i v-text="article.description"/>
-      </h3>
-    </header>
+    <Header
+      :date="article.date" 
+      :banner="article.banner"
+      :title="article.title"
+      :subtitle="article.subtitle"
+      :description="article.description"/>
     <div v-for="(item, index) in article.content" :key="'contentItem'+index">
+     
       <p v-if="item.type==='text'" v-text="item.value"/>
       <q v-if="item.type==='quote'" v-text="item.value"/>
       <quote v-if="item.type==='quoteFirm'">
@@ -45,6 +41,7 @@
           <a v-text="value.value2"/>
         </div>
       </div>
+    
     </div>
     <footer v-text="article.form"/>
   </article>

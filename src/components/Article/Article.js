@@ -1,6 +1,7 @@
+import Header from "@/components/shared/Header";
 export default {
   name: 'article',
-  components: {},
+  components: {Header},
   props: ['article'],
   data () {
     return {
