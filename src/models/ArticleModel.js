@@ -1,41 +1,63 @@
 import validator from '../utils/validator';
 
-function ArticleModel(
-    
-    param = {
-        date: '',
-        title: '',
-        subTitle: '',
-        description: '',
-        banner: '',
-        content: [],
-        firm: ''
-    }
-
-) {
-
-    if (validator.str(param.date)(date => date)) this.date = param.date
-    else throw ''
-
-    if (validator.str(param.title)(title => title)) this.title = param.title
-    else throw ''
-
-    if (validator.str(param.subTitle)(subTitle => subTitle)) this.subTitle = param.subTitle
-    else throw ''
-
-    if (validator.str(param.description)(description => description)) this.description = param.description
-    else throw ''
-    
-    if (validator.str(param.banner)(banner => banner)) this.banner = param.banner
-    else throw ''
-    
-    if (param.content.length) this.content = param.content
-    else throw ''
-    
-    if (validator.str(param.firm)(firm => firm)) this.firm = param.firm
-    else throw ''
-
+const paramInterface = {
+    date: '',
+    title: '',
+    subTitle: '',
+    description: '',
+    banner: '',
+    content: [],
+    firm: ''
 }
 
+function ArticleModel(param = paramInterface) {
+    this.buildWithDefaultValues()
+    this.validateParam(param)
+    this.setProps(param)
+}
+
+ArticleModel.prototype.buildWithDefaultValues = function () {
+    this.date = ''
+    this.title = ''
+    this.subTitle = ''
+    this.banner = ''
+    this.description = ''
+    this.content = []
+    this.firm = ''
+}
+
+ArticleModel.prototype.validateParam = (param) => {
+    if (!validator.str(param.date)(date => date)) {
+        throw 'ArticleModel: date param is not valid'
+    }
+    if (!validator.str(param.title)(title => title)) {
+        throw 'ArticleModel: title param is not valid'
+    }
+    if (!validator.str(param.subTitle)(subTitle => subTitle)) {
+        throw 'ArticleModel: subTitle param is not valid'
+    }
+    if (!validator.str(param.description)(description => description)) {
+        throw 'ArticleModel: description param is not valid'
+    }
+    if (!validator.str(param.banner)(banner => banner)) {
+        throw 'ArticleModel: banner param is not valid'
+    }
+    if (!param.content.length) {
+        throw 'ArticleModel: content param is not valid'
+    }
+    if (!validator.str(param.firm)(firm => firm)) {
+        throw 'ArticleModel: firm param is not valid'
+    }
+}
+
+ArticleModel.prototype.setProps = function (param = paramInterface) {
+    this.date = param.date
+    this.title = param.title
+    this.subTitle = param.subTitle
+    this.banner = param.banner
+    this.description = param.description
+    this.content = param.content
+    this.firm = param.firm
+}
 
 export default ArticleModel

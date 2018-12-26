@@ -13,7 +13,6 @@ const ArticleServices = {
         const findedFullArticle = fakeData.fakeFetchContent.find(article => article.date === date && article.title === title)
         const fullArticleModeled = new ArticleModel(findedFullArticle)
         return fullArticleModeled
-
     }
 }
 

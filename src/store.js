@@ -56,6 +56,7 @@ const store = {
     }) {
 
       commit('setFindParam', findParams)
+      
       if (!getters.getArticle.title) {
         const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
         commit('addFullArticle', fullArticleFetched)
