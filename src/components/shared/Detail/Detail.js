@@ -1,5 +1,5 @@
 export default {
-  name: 'detail',
+  name: 'Detail',
   components: {},
   props: [],
   data () {

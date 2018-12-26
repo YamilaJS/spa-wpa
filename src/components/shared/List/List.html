@@ -1,5 +1,7 @@
 
 <section class="list">
-  <h1>list Component</h1>
+  <ul v-if="type==='list'" class="list">
+    <li v-for="(item, index ) in list" :key="'item'+index" v-text="item"/>
+  </ul>
 </section>
 

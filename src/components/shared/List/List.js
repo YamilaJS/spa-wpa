@@ -1,19 +1,6 @@
 export default {
-  name: 'list',
+  name: 'List',
   components: {},
-  props: [],
-  data () {
-    return {
-
-    }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
+  props:['type', 'list']
 }
+

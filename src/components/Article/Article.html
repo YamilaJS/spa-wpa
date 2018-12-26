@@ -1,6 +1,6 @@
 <section class="article">
     <Header 
-      :date="article.date" 
+      :date="article.date"
       :banner="article.banner" 
       :title="article.title"
       :subTitle="article.subTitle"
@@ -8,6 +8,9 @@
     />
   
     <div v-for="(item, index) in article.content" :key="'contentItem'+index">
+
+
+
       <p v-if="item.type==='text'" v-text="item.value" />
       <q v-if="item.type==='quote'" v-text="item.value" />
       <quote v-if="item.type==='quoteFirm'">
@@ -27,9 +30,7 @@
       <div v-if="item.type==='frame'" v-text="item.value" />
       <div v-if="item.type==='block'" v-text="item.value" />
       <div v-if="item.type==='note'" v-text="item.value" />
-      <ul v-if="item.type==='list'">
-        <li v-for="(value, index) in item.value" v-text="value" :key="'li'+index" />
-      </ul>
+  
       <ol v-if="item.type==='orderList'">
         <li v-for="(value, index) in item.value" v-text="value" :key="'li'+index" />
       </ol>
@@ -40,9 +41,13 @@
         </div>
       </div>
       <Bold
-      :type="item.type"
-      :value="item.value"
-     />
+        :type="item.type"
+        :value="item.value"
+      />
+      <List 
+        :type="item.type"
+        :list="item.value"
+      />
     </div>
     <footer v-text="article.form" />
   </section>

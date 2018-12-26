@@ -29,7 +29,8 @@ export default {
             description: 'Esto es una descripción del artículo',
             content: [
                 { type: 'text', value: 'Esto es el textoo' },
-                { type: 'quote', value: 'Esto es una cita' }
+                { type: 'quote', value: 'Esto es una cita' },
+                { type: 'list', value: ['Pepe', 'Juan'] }
             ],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
             date: '2018-05-12',
