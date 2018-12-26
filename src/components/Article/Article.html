@@ -31,9 +31,7 @@
       <div v-if="item.type==='block'" v-text="item.value" />
       <div v-if="item.type==='note'" v-text="item.value" />
   
-      <ol v-if="item.type==='orderList'">
-        <li v-for="(value, index) in item.value" v-text="value" :key="'li'+index" />
-      </ol>
+     
       <div v-if="item.type==='detail'">
         <div v-for="(value, index) in item.value" :key="'detail'+index">
           <label v-text="value.value1" />
@@ -47,6 +45,10 @@
       <List 
         :type="item.type"
         :list="item.value"
+      />
+      <OrderList
+      :type="item.type"
+      :list="item.value"
       />
     </div>
     <footer v-text="article.form" />
