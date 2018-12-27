@@ -1,19 +1,4 @@
 export default {
-  name: 'sub-title',
-  components: {},
-  props: [],
-  data () {
-    return {
-
-    }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
+  name: 'subTitle',
+  props: ['type', 'value'],
 }

@@ -22,7 +22,7 @@
         <img :src="item.value1">
         <description v-text="item.value2" />
       </figure>
-      <h6 v-if="item.type==='subTitle'" v-text="item.value" />
+      
       <h7 v-if="item.type==='description'" v-text="item.value" />
       <a v-if="item.type==='link'" :h-ref="item.value" />
       <hr v-if="item.type==='separator'">
@@ -50,6 +50,10 @@
       :list="item.value"
       />
       <Title
+      :type="item.type"
+      :value="item.value"
+      />
+      <SubTitle
       :type="item.type"
       :value="item.value"
       />
