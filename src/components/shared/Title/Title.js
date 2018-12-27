@@ -1,19 +1,4 @@
 export default {
-  name: 'title',
-  components: {},
-  props: [],
-  data () {
-    return {
-
-    }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
+  name: 'Title',
+  props: ['type', 'value'],
 }

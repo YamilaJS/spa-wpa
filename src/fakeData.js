@@ -32,8 +32,8 @@ export default {
                 { type: 'quote', value: 'Esto es una cita' },
                 { type: 'list', value: ['Pepe', 'Juan'] },
                 { type: 'orderList', value: ['Pepe2', 'Juan2'] },
-                { type: 'title', value: 'Pepe y Juan' }
-
+                { type: 'title', value: 'Pepe y Juan' },
+                { type: 'subTitle', value: 'Pepe y Juan sub' }
 
             ],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
