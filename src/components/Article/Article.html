@@ -8,55 +8,85 @@
     />
   
     <div v-for="(item, index) in article.content" :key="'contentItem'+index">
+      
+      
+      
+      
+      <p v-if="item.type==='text'" v-text="item.value" /> 
 
 
-
-      <p v-if="item.type==='text'" v-text="item.value" />
-      <q v-if="item.type==='quote'" v-text="item.value" />
       <quote v-if="item.type==='quoteFirm'">
-        <p v-text="item.value1"></p>
+        <p v-text="item.value1" />
         <footer v-text="item.value2" />
       </quote>
-      <img v-if="item.type==='image'" :src="item.value">
-      <figure v-if="item.type==='photo'">
-        <img :src="item.value1">
-        <description v-text="item.value2" />
-      </figure>
+
       
-      <h7 v-if="item.type==='description'" v-text="item.value" />
-      <a v-if="item.type==='link'" :h-ref="item.value" />
-      <hr v-if="item.type==='separator'">
-      <div v-if="item.type==='frame'" v-text="item.value" />
-      <div v-if="item.type==='block'" v-text="item.value" />
-      <div v-if="item.type==='note'" v-text="item.value" />
-  
+      <img v-if="item.type==='image'" :src="item.value">
+      <a v-if="item.type==='link'" :href="item.value" />
      
+      
+      
+    
       <div v-if="item.type==='detail'">
         <div v-for="(value, index) in item.value" :key="'detail'+index">
-          <label v-text="value.value1" />
+          <label v-text="value.value1"/>
           <a v-text="value.value2" />
         </div>
       </div>
-      <Bold
-        :type="item.type"
-        :value="item.value"
+
+      
+      <ovSummary
+      :type="item.type"
+      :value="item.value"
       />
-      <List 
-        :type="item.type"
-        :list="item.value"
-      />
-      <OrderList
+      <ovOrderList
       :type="item.type"
       :list="item.value"
       />
-      <Title
+      <ovSubtitle
       :type="item.type"
       :value="item.value"
       />
-      <SubTitle
+      <ovList 
+      :type="item.type"
+      :list="item.value"
+      />
+      <ovTitle
       :type="item.type"
       :value="item.value"
       />
-    </div>
+      <ovBold
+      :type="item.type"
+      :value="item.value"
+      />
+      <ovQuote
+      :type="item.type"
+      :value="item.value"
+      />
+      <ovText
+      :type="item.type"
+      :value="item.value"
+      />
+      <ovNote
+      :type="item.type"
+      :value="item.value"
+      />
+      <ovBlock
+      :type="item.type"
+      :value="item.value"
+      />
+      <ovFrame
+      :type="item.type"
+      :value="item.value"
+      />
+      <ovSeparator
+      :type="item.type"
+      />
+      <ovPhoto
+      :type="item.type"
+      :value1="item.value1"
+      :value2="item.value2"
+      />
+     </div>
     <footer v-text="article.form" />
   </section>

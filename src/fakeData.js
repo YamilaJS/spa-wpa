@@ -28,12 +28,25 @@ export default {
             subTitle: 'Esto es un subtítulo',
             description: 'Esto es una descripción del artículo',
             content: [
-                { type: 'text', value: 'Esto es el textoo' },
-                { type: 'quote', value: 'Esto es una cita' },
-                { type: 'list', value: ['Pepe', 'Juan'] },
-                { type: 'orderList', value: ['Pepe2', 'Juan2'] },
-                { type: 'title', value: 'Pepe y Juan' },
-                { type: 'subTitle', value: 'Pepe y Juan sub' }
+                { type: 'ovTitle', value: 'Esto es un Título' },
+                { type: 'ovSubtitle', value: 'Esto es un Subtitle' },
+                { type: 'ovSummary', value: 'Esto es un Summary' },
+                { type: 'ovText', value: 'Esto es el texto' },
+                { type: 'ovOrderList', value: ['item1', 'item2'] },
+                { type: 'ovList', value: ['Elemento 1', 'Elemento 2'] },
+                { type: 'ovBold', value: 'Esto es letra negrita' },
+                { type: 'ovQuote', value: 'Esto es una cita' },
+                { type: 'ovNote', value: 'Esto es una nota' },
+                { type: 'ovBlock', value: 'Esto es un blockkkkkkkkkkkkkkkk' },
+                { type: 'ovFrame', value: 'Esto es un frame' },
+                { type: 'ovSeparator' },
+                { type: 'ovPhoto', value1: "https://www.nocreasnada.com/wp-content/uploads/2018/03/2018-03-05_5a9dd71726385_dwvw.jpg", value2:'Esto es un figcaption' },
+                
+                
+                
+                
+                
+                
 
             ],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
