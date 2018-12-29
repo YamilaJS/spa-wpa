@@ -37,17 +37,14 @@ export default {
                 { type: 'ovBold', value: 'Esto es letra negrita' },
                 { type: 'ovQuote', value: 'Esto es una cita' },
                 { type: 'ovNote', value: 'Esto es una nota' },
-                { type: 'ovBlock', value: 'Esto es un blockkkkkkkkkkkkkkkk' },
+                { type: 'ovBlock', value: 'Esto es un block' },
                 { type: 'ovFrame', value: 'Esto es un frame' },
                 { type: 'ovSeparator' },
                 { type: 'ovPhoto', value1: "https://www.nocreasnada.com/wp-content/uploads/2018/03/2018-03-05_5a9dd71726385_dwvw.jpg", value2:'Esto es un figcaption' },
-                
-                
-                
-                
-                
-                
-
+                { type: 'ovQuoteFirm', value1: 'Esto es una cita', value2:'Este es el autor' },
+                { type: 'ovImage', value: "https://www.imagenesdegatos.net/wp-content/uploads/2015/12/gato-gris-ojos-naranja-3.jpg" },
+                { type: 'ovLink', value1: "https://www.google.com/", value2: 'Link' },
+                { type: 'ovFooter', value: 'Firmas' },
             ],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
             date: '2018-05-12',

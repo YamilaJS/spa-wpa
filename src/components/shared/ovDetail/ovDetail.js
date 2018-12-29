@@ -1,5 +1,5 @@
 export default {
-  name: 'image',
+  name: 'ov-detail',
   components: {},
   props: [],
   data () {

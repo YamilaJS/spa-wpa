@@ -11,15 +11,18 @@ import ovNote from "@/components/shared/ovNote";
 import ovFrame from "@/components/shared/ovFrame";
 import ovSeparator from "@/components/shared/ovSeparator";
 import ovPhoto from "@/components/shared/ovPhoto";
-
+import ovQuoteFirm from "@/components/shared/ovQuoteFirm";
+import ovImage from "@/components/shared/ovImage";
+import ovLink from "@/components/shared/ovLink";
+import ovFooter from "@/components/shared/ovFooter";
 
 import {
-  ovBlock,
+ ovBlock,
 } from '@/components/shared'
 
 export default {
   name: 'Article',
-  components: { Header, ovSummary, ovOrderList, ovSubtitle, ovList, ovTitle, ovBold, ovQuote, ovText, ovNote, ovBlock, ovFrame, ovSeparator, ovPhoto },
+  components: { Header, ovSummary, ovOrderList, ovSubtitle, ovList, ovTitle, ovBold, ovQuote, ovText, ovNote, ovBlock, ovFrame, ovSeparator, ovPhoto, ovQuoteFirm, ovImage, ovLink, ovFooter },
   props: ['article'],
   data() {
     return {

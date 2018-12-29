@@ -1,4 +1,4 @@
-<section class="article">
+<article class="article">
     <Header 
       :date="article.date"
       :banner="article.banner" 
@@ -7,26 +7,8 @@
       :description="article.description"
     />
   
-    <div v-for="(item, index) in article.content" :key="'contentItem'+index">
-      
-      
-      
-      
-      <p v-if="item.type==='text'" v-text="item.value" /> 
-
-
-      <quote v-if="item.type==='quoteFirm'">
-        <p v-text="item.value1" />
-        <footer v-text="item.value2" />
-      </quote>
-
-      
-      <img v-if="item.type==='image'" :src="item.value">
-      <a v-if="item.type==='link'" :href="item.value" />
-     
-      
-      
-    
+  <div v-for="(item, index) in article.content" :key="'contentItem'+index"> 
+      <p v-if="item.type==='text'" v-text="item.value" />  
       <div v-if="item.type==='detail'">
         <div v-for="(value, index) in item.value" :key="'detail'+index">
           <label v-text="value.value1"/>
@@ -34,7 +16,6 @@
         </div>
       </div>
 
-      
       <ovSummary
       :type="item.type"
       :value="item.value"
@@ -87,6 +68,23 @@
       :value1="item.value1"
       :value2="item.value2"
       />
-     </div>
-    <footer v-text="article.form" />
-  </section>
+      <ovQuoteFirm
+      :type="item.type"
+      :value1="item.value1"
+      :value2="item.value2"
+      />
+      <ovImage
+      :type="item.type"
+      :value="item.value"
+      />
+      <ovLink
+      :type="item.type"
+      :value1="item.value1"
+      :value2="item.value2"
+      /> 
+    </div>
+    
+    <ovFooter
+      :value="article.firm"
+    />
+  </article>

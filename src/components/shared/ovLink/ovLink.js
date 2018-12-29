@@ -1,4 +1,4 @@
 export default {
-  name: 'ovQuoteFirm',
+  name: 'ovLink',
   props: ['type', 'value1', 'value2'],
 }

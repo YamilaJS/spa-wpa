@@ -1,5 +1,5 @@
 export default {
-  name: 'Detail',
+  name: 'ov-header',
   components: {},
   props: [],
   data () {
