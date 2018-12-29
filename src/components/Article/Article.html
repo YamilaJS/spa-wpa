@@ -1,12 +1,11 @@
 <article class="article">
-    <Header 
-      :date="article.date"
-      :banner="article.banner" 
-      :title="article.title"
-      :subTitle="article.subTitle"
-      :description="article.description"
-    />
-  
+    <ovHeader 
+    :date="article.date"
+    :banner="article.banner" 
+    :title="article.title"
+    :subTitle="article.subTitle"
+    :description="article.description"
+  />
   <div v-for="(item, index) in article.content" :key="'contentItem'+index"> 
       <p v-if="item.type==='text'" v-text="item.value" />  
       <div v-if="item.type==='detail'">
@@ -81,7 +80,11 @@
       :type="item.type"
       :value1="item.value1"
       :value2="item.value2"
-      /> 
+      />
+      <ovDetail
+      :type="item.type"
+      :values="item.value"
+      />
     </div>
     
     <ovFooter

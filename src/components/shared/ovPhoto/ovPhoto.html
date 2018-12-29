@@ -1,8 +1,4 @@
-
-<section class="ov-photo">
-  <figure v-if="type==='ovPhoto'">
-    <img :src="value1">
-    <figcaption v-text="value2" />
-  </figure>
-</section>
-
+<figure v-if="type==='ovPhoto'" class="ov-photo">
+  <img :src="value1">
+  <figcaption v-text="value2" />
+</figure>

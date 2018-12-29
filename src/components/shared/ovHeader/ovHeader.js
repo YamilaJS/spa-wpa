@@ -1,19 +1,4 @@
 export default {
-  name: 'ov-header',
-  components: {},
-  props: [],
-  data () {
-    return {
-
-    }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
+  name: 'ovHeader',
+  props: ['date','banner','title','subTitle','description'], 
 }

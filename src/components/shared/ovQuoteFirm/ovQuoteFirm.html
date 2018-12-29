@@ -1,8 +1,4 @@
-
-<section class="ov-quote-firm">
-  <blockquote  v-if="type==='ovQuoteFirm'">
-    <p v-text="value1" />
-    <footer v-text="value2" />
-  </blockquote>
-</section>
-
+<blockquote v-if="type==='ovQuoteFirm'" class="ov-quote-firm">
+  <p v-text="value1" />
+  <footer v-text="value2" />
+</blockquote>

@@ -1,5 +1,6 @@
-
-<section class="ov-detail">
-  <h1>ov-detail Component</h1>
-</section>
-
+<ul v-if="type==='ovDetail'" class="ov-detail" >
+  <li v-for="(value, index) in values" :key="'ovDetail'+index">
+    <label v-text="value.label"/>
+    <a v-text="value.value" />
+  </li>
+</ul>

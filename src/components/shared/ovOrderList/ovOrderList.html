@@ -1,7 +1,3 @@
-
-<section class="ov-order-list">
-  <ol v-if="type==='ovOrderList'" class="ov-orderList">
-    <li v-for="(item, index) in list" v-text="item" :key="'li'+index"/>
-  </ol>
-</section>
-
+<ol v-if="type==='ovOrderList'" class="ov-orderList">
+  <li v-for="(item, index) in list" v-text="item" :key="'li'+index" />
+</ol>

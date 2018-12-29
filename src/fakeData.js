@@ -44,7 +44,10 @@ export default {
                 { type: 'ovQuoteFirm', value1: 'Esto es una cita', value2:'Este es el autor' },
                 { type: 'ovImage', value: "https://www.imagenesdegatos.net/wp-content/uploads/2015/12/gato-gris-ojos-naranja-3.jpg" },
                 { type: 'ovLink', value1: "https://www.google.com/", value2: 'Link' },
-                { type: 'ovFooter', value: 'Firmas' },
+                { type: 'ovDetail', value: [ 
+                    { label: 'nombre', value: 'Leonardo' },
+                    { label: 'apellido', value: 'Larrosa' }        
+                ]}
             ],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
             date: '2018-05-12',
