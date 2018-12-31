@@ -11,7 +11,7 @@ export default {
             title: 'Este es otro título',
             subTitle: 'Este es otro subtítulo',
             description: 'Esto es otra descripción del artículo',
-            banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
+            banner: "https://www.thesprucepets.com/thmb/-dY_W4edPcFENqO9wH-tsIQeotc=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/37348687_179210919505845_8579658165484781568_n-5b69b1b346e0fb00500b0880.jpg",
             date: '2018-03-06',
         },
         {
@@ -58,7 +58,7 @@ export default {
             subTitle: 'Este es otro subtítulo',
             description: 'Esto es otra descripción del artículo',
             content: [{ type: 'text', value: 'Esto es el texto' }],
-            banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
+            banner: "https://www.thesprucepets.com/thmb/-dY_W4edPcFENqO9wH-tsIQeotc=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/37348687_179210919505845_8579658165484781568_n-5b69b1b346e0fb00500b0880.jpg",
             date: '2018-03-06',
             firm: 'Esto es una firma'
         },

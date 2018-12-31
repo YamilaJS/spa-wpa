@@ -1,8 +1,13 @@
-#app * {
+body{
+    margin:0px !important;
+}
+
+body * {
+    
     font-family: Helvetica;
     text-shadow: 0,9px 0,9px #000000;
     letter-spacing: 0,5px;
-    color:#343232;
+    //color:#343232;
     width: 100%;
     display:block;
     float:left;
@@ -10,6 +15,5 @@
     margin:0px !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: justify;
+    text-align: left;
 }
-

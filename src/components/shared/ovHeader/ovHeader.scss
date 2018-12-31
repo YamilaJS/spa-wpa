@@ -1,28 +1,40 @@
 .ov-header{
-    background: rgb(240,240,240);
-    box-shadow: 0px 0px 5px black;
+    border-bottom: 2px groove #eee;
+    padding-bottom: 10px;
+}
+
+.ov-header .titleImage{
+    padding:0px !important;
+    position: relative;
+}
+
+.ov-header .titleImage img {
+    //padding: 10px;
+    z-index: 10;
+    position: relative;
+}
+
+.ov-header .titleImage h1 {
+    padding: 10px;
+    font-size: 25px;
+    position: absolute;
+    bottom:0px;
+    color:white;    
+    z-index: 100;
+    background: linear-gradient( rgba(0,0,0,.1),  rgba(0,0,0,.9));
 }
 
 .ov-header data {
     font-size: 17px;
-    color: black !important;
     padding: 10px;
 }
 
-img {
+.ov-header h2 {
     padding: 10px;
+    font-size: 20px;
 }
 
-h1 {
+.ov-header h3 {
     padding: 10px;
+    font-size: 17px;
 }
-
-h2 {
-    padding: 10px;
-}
-
-h3 {
-    padding: 10px;
-}
-
-
