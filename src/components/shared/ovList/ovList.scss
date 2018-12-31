@@ -1,3 +1,9 @@
 .ov-list {
+    list-style-type: square;
+    padding: 10px;
+};
 
+.ov-list li {
+    display: list-item !important;
+    padding: 3px;
 }

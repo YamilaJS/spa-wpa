@@ -1,4 +1,5 @@
 import validator from '../utils/validator';
+import { throws } from 'assert';
 
 const paramInterface = {
     date: '',
@@ -45,6 +46,11 @@ ArticleModel.prototype.validateParam = (param) => {
     if (!param.content.length) {
         throw 'ArticleModel: content param is not valid'
     }
+
+    param.content.map((item, index) => {
+        if(typeof item !== 'object' ) throw `ArticleModel: content[${index}] param is not valid`
+    })
+
     if (!validator.str(param.firm)(firm => firm)) {
         throw 'ArticleModel: firm param is not valid'
     }
