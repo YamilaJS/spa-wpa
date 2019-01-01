@@ -1,3 +1,13 @@
-.ov-quote-firm {
-
+.ov-quote-firm{
+   padding: 10px 18px 10px 10px;
+}
+.ov-quote-firm p{
+    display:block;
+    font: italic 22px Georgia, “Times New Roman”, Times, serif !important;
+}
+.ov-quote-firm footer {
+    text-align: right;
+    padding-right: 10px;
+    display: block;
+    font: normal 18px Georgia, “Times New Roman”, Times, serif !important;
 }
