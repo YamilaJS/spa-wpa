@@ -7,13 +7,13 @@
     :description="article.description"
   />
   <div v-for="(item, index) in article.content" :key="'contentItem'+index"> 
-      <p v-if="item.type==='text'" v-text="item.value" />  
-      <div v-if="item.type==='detail'">
-        <div v-for="(value, index) in item.value" :key="'detail'+index">
-          <label v-text="value.value1"/>
-          <a v-text="value.value2" />
-        </div>
-      </div>
+    <p v-if="item.type==='text'" v-text="item.value" />  
+    <div v-if="item.type==='detail'">
+      <div v-for="(value, index) in item.value" :key="'detail'+index">
+        <label v-text="value.value1"/>
+        <a v-text="value.value2" />
+    </div>
+  </div>
 
       <ovSummary
       :type="item.type"

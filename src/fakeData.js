@@ -40,7 +40,7 @@ export default {
                 { type: 'ovBlock', value: 'Esto es un block' },
                 { type: 'ovFrame', value: 'Esto es un frame' },
                 { type: 'ovSeparator' },
-                { type: 'ovPhoto', value1: "https://www.nocreasnada.com/wp-content/uploads/2018/03/2018-03-05_5a9dd71726385_dwvw.jpg", value2:'Esto es un figcaption' },
+                { type: 'ovPhoto', value1: "https://purrfectlove.net/wp-content/uploads/2018/01/gingercat.jpg", value2:'Soy un gato negro de barrio' },
                 { type: 'ovQuoteFirm', value1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor consectetur justo. Etiam in facilisis purus. Sed placerat erat consequat, gravida turpis dignissim, faucibus velit.', value2:'Nombre de Autor' },
                 { type: 'ovImage', value: "https://www.imagenesdegatos.net/wp-content/uploads/2015/12/gato-gris-ojos-naranja-3.jpg" },
                 { type: 'ovLink', value1: "https://www.google.com/", value2: 'Link' },

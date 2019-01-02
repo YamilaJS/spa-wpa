@@ -1,3 +1,13 @@
-.ov-photo {
-
+.ov-photo{
+   border:3px solid black;
+   background: black;
+}
+.ov-photo img {
+    display: block;   
+}
+.ov-photo figcaption { 
+    font: normal 16px Georgia, “Times New Roman”, Times, serif;
+    color:white;
+    background:black;
+    padding: 5px 10px;
 }
