@@ -16,3 +16,13 @@ body * {
     -moz-osx-font-smoothing:grayscale;
     text-align:left
 }
+
+@media only screen and (min-width: 800px){
+    body  {
+        display: block;
+        padding:5% 25% 5% 25%;
+        float:left;
+       
+    }
+    
+}
