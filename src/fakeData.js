@@ -36,17 +36,18 @@ export default {
                 { type: 'ovList', value: ['Elemento 1', 'Elemento 2', 'Elemento 3', 'Elemento 4'] },
                 { type: 'ovBold', value: 'Esto es letra negrita' },
                 { type: 'ovQuote', value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor consectetur justo. Etiam in facilisis purus. Sed placerat erat consequat, gravida turpis dignissim, faucibus velit.' },
-                { type: 'ovNote', value: 'Esto es una nota' },
+                { type: 'ovNote', value: 'Esto es una nota. Para ver más visite el siguiente sitio: www.google.com' },
                 { type: 'ovBlock', value: 'Esto es un bloque de texto.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit dignissim, efficitur dolor sit amet, dignissim nisl. Donec nec velit vel metus rutrum blandit vitae ac massa. Suspendisse ut congue massa, ac feugiat purus. Fusce scelerisque commodo lacus, ut sodales ipsum egestas non. Integer viverra metus velit, quis faucibus orci lacinia maximus. Sed sollicitudin, felis quis facilisis auctor, magna justo fermentum arcu, et sagittis ex ante quis mauris. Fusce viverra risus ut lacus cursus, et blandit nibh molestie. Quisque feugiat egestas nisl nec ultricies. Mauris sapien elit, pharetra id nisl eu, tristique venenatis purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vel gravida nulla.' },
                 { type: 'ovFrame', value: 'Esto es un frame. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor consectetur justo. Etiam in facilisis purus. Sed placerat erat consequat, gravida turpis dignissim, faucibus velit.' },
-                { type: 'ovSeparator' },
+                { type: 'ovLink', value1: "https://www.google.com/", value2: 'Link' },
                 { type: 'ovPhoto', value1: "https://purrfectlove.net/wp-content/uploads/2018/01/gingercat.jpg", value2:'Soy un gato de barrio' },
                 { type: 'ovQuoteFirm', value1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor consectetur justo. Etiam in facilisis purus. Sed placerat erat consequat, gravida turpis dignissim, faucibus velit.', value2:'Nombre de Autor' },
+                { type: 'ovSeparator' },
                 { type: 'ovImage', value: "https://www.imagenesdegatos.net/wp-content/uploads/2015/12/gato-gris-ojos-naranja-3.jpg" },
-                { type: 'ovLink', value1: "https://www.google.com/", value2: 'Link' },
                 { type: 'ovDetail', value: [ 
-                    { label: 'nombre', value: 'Leonardo' },
-                    { label: 'apellido', value: 'Larrosa' }        
+                    { label: 'Nombre', value: 'Leonardo' },
+                    { label: 'Apellido', value: 'Larrosa' },
+                    { label: 'Género', value: 'Masculino'}        
                 ]}
             ],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",

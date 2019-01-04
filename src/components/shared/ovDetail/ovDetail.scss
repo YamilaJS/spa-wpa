@@ -1,3 +1,17 @@
-.ov-detail {
+.ov-detail  {
+    color:black;
+    background-color: #EBEDEF;
+    padding: 10px;   
+}
 
+.ov-detail label {
+    font-weight: bold;
+    text-align: left;
+    font-size:18px;
+    padding-top: 15px;
+}
+.ov-detail a {
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    padding-bottom:15px;
 }
