@@ -4,7 +4,7 @@ export default {
             title: 'Este es un Título',
             subTitle: 'Esto es un subtítulo',
             description: 'Esto es una descripción del artículo',
-            banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
+            banner: "http://scd.es.rfi.fr/sites/espanol.filesrfi/dynimagecache/0/864/4896/2759/600/338/sites/images.rfi.fr/files/aef_image/img_20180313_1424497.jpg",
             date: '2018-05-12',
         },
         {
@@ -50,7 +50,7 @@ export default {
                     { label: 'Género', value: 'Masculino'}        
                 ]}
             ],
-            banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
+            banner: "http://scd.es.rfi.fr/sites/espanol.filesrfi/dynimagecache/0/864/4896/2759/600/338/sites/images.rfi.fr/files/aef_image/img_20180313_1424497.jpg",
             date: '2018-05-12',
             firm: 'Esto es una firma'
         },
