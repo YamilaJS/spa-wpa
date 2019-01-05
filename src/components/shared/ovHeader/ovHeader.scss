@@ -1,40 +1,33 @@
 .ov-header{
-    border-bottom: 2px groove #eee;
-    padding-bottom: 10px;
+    //width: 200%;
+    //margin: -10% -50% !important;
+    border-bottom: 1px solid #ddd;
 }
 
-.ov-header .titleImage{
-    padding:0px !important;
-    position: relative;
+.ov-header hgroup{
+    padding: 10px;
 }
 
-.ov-header .titleImage img {
-    //padding: 10px;
-    z-index: 10;
-    position: relative;
-}
-
-.ov-header .titleImage h1 {
+.ov-header h1 {
     padding: 10px;
     font-size: 25px;
-    position: absolute;
-    bottom:0px;
-    color:white;    
-    z-index: 100;
-    background: linear-gradient( rgba(0,0,0,.1),  rgba(0,0,0,.9));
+    text-align: center !important;
 }
 
 .ov-header data {
-    font-size: 17px;
     padding: 10px;
+    font-size: 17px;
+    text-align: center !important;
 }
 
 .ov-header h2 {
     padding: 10px;
     font-size: 20px;
+    text-align: center !important;
 }
 
 .ov-header h3 {
     padding: 10px;
     font-size: 17px;
+    //text-align: center !important;
 }
