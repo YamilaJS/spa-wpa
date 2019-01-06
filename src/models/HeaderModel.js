@@ -23,7 +23,7 @@ HeaderModel.prototype.buildWithDefaultValues = function () {
     this.description = ''
 }
 
-HeaderModel.prototype.validateParam = (param) => {
+HeaderModel.prototype.validateParam = (param = defaultParam) => {
     if (!validator.str(param.date)(date => date)) {
         throw 'HeaderModel: date param is not valid'
     }

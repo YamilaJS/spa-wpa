@@ -37,32 +37,25 @@ const store = {
         content: [],
         firm: ''
       }
-
     }
   },
   actions: {
     async loadArticleList({ commit }) {
-
       const articlesFecheds = await services.fetchArticleList()
-      
-      console.log(articlesFecheds)
       commit('addArticleList', articlesFecheds)
       return
-
     },
     async seeArticle({ commit, getters }, findParams = {
-
       date: '',
       title: ''
-
     }) {
-
       commit('setFindParam', findParams)
-      
       if (!getters.getArticle.title) {
         const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
+        console.log(fullArticleFetched.defaultParam)
         commit('addFullArticle', fullArticleFetched)
       } else if (getters.getArticle.title && !getters.getArticle.content.lenght) {
+        // realmente aca se deberia ir a buscar solo el contenido del articulo
         const fullArticleFetched = await services.fetchFullArticle(findParams.date, findParams.title)
         commit('addContentArticle', {
           date: findParams.date,
@@ -72,53 +65,33 @@ const store = {
         })
       }
       return
-
     },
   },
   mutations: {
-
-
     addArticleList(state, articles = []) {
-
       state.articles = articles
       return
-
     },
-
-
     addFullArticle(state, fullArticle = new ArticleModel()) {
-
       fullArticle instanceof ArticleModel && state.articles.push(fullArticle)
       return
-
     },
-
-
     setFindParam(state, findParams = {
-
       date: '',
       title: ''
-
     }) {
-
       state.findParams = {
         date: findParams.date,
         title: findParams.title
       }
       return
-
     },
-
-
     addContentArticle(state, content = {
-
       date: '',
       title: '',
       content: [],
       firm: ''
-
     }) {
-
       const indexFinded = state.articles.findIndex(
         article => article.title === content.title && article.date === content.date
       )
@@ -128,7 +101,6 @@ const store = {
       state.articles = newArticles
       return
     }
-
   }
 }
 

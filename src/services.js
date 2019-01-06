@@ -5,7 +5,7 @@ import HeaderModel from './models/HeaderModel'
 const ArticleServices = {
     async fetchArticleList() {
         let articleHeaders = [HeaderModel]
-        articleHeaders = fakeData.fakeFetchArticles.map((article = new HeaderModel()) => {
+        articleHeaders = fakeData.fakeFetchArticles.map((article = HeaderModel) => {
             return new HeaderModel({
                 banner: article.banner,
                 date: article.date,

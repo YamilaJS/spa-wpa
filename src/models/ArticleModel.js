@@ -17,6 +17,16 @@ function ArticleModel(param = defaultParam) {
     this.setProps(param)
 }
 
+ArticleModel.defaultParam = {
+    date: '',
+    title: '',
+    subTitle: '',
+    description: '',
+    banner: '',
+    content: [],
+    firm: ''
+}
+
 ArticleModel.prototype.buildWithDefaultValues = function () {
     this.date = ''
     this.title = ''
@@ -27,7 +37,7 @@ ArticleModel.prototype.buildWithDefaultValues = function () {
     this.firm = ''
 }
 
-ArticleModel.prototype.validateParam = (param) => {
+ArticleModel.prototype.validateParam = (param = defaultParam) => {
     if (!validator.str(param.date)(date => date)) {
         throw 'ArticleModel: date param is not valid'
     }
