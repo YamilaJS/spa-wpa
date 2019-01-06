@@ -3,7 +3,7 @@ export default {
         {
             title: 'Este es un Título',
             subTitle: 'Esto es un subtítulo',
-            description: 'Esto es una descripción del artículo',
+            description: 'Esto es una descripción del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing.',
             content: [
                 { type: 'ovTitle', value: 'Esto es un Título' },
                 { type: 'ovSubtitle', value: 'Esto es un Subtitle' },
