@@ -44,6 +44,8 @@ const store = {
     async loadArticleList({ commit }) {
 
       const articlesFecheds = await services.fetchArticleList()
+      
+      console.log(articlesFecheds)
       commit('addArticleList', articlesFecheds)
       return
 
