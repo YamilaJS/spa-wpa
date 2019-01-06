@@ -1,7 +1,7 @@
 import validator from '../utils/validator';
 import { throws } from 'assert';
 
-const paramInterface = {
+const defaultParam = {
     date: '',
     title: '',
     subTitle: '',
@@ -11,10 +11,20 @@ const paramInterface = {
     firm: ''
 }
 
-function ArticleModel(param = paramInterface) {
+function ArticleModel(param = defaultParam) {
     this.buildWithDefaultValues()
     this.validateParam(param)
     this.setProps(param)
+}
+
+ArticleModel.defaultParam = {
+    date: '',
+    title: '',
+    subTitle: '',
+    description: '',
+    banner: '',
+    content: [],
+    firm: ''
 }
 
 ArticleModel.prototype.buildWithDefaultValues = function () {
@@ -27,7 +37,7 @@ ArticleModel.prototype.buildWithDefaultValues = function () {
     this.firm = ''
 }
 
-ArticleModel.prototype.validateParam = (param) => {
+ArticleModel.prototype.validateParam = (param = defaultParam) => {
     if (!validator.str(param.date)(date => date)) {
         throw 'ArticleModel: date param is not valid'
     }
@@ -56,7 +66,7 @@ ArticleModel.prototype.validateParam = (param) => {
     }
 }
 
-ArticleModel.prototype.setProps = function (param = paramInterface) {
+ArticleModel.prototype.setProps = function (param = defaultParam) {
     this.date = param.date
     this.title = param.title
     this.subTitle = param.subTitle
