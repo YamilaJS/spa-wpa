@@ -1,7 +1,7 @@
 import validator from '../utils/validator';
 import { throws } from 'assert';
 
-const paramInterface = {
+const defaultParam = {
     date: '',
     title: '',
     subTitle: '',
@@ -11,7 +11,7 @@ const paramInterface = {
     firm: ''
 }
 
-function ArticleModel(param = paramInterface) {
+function ArticleModel(param = defaultParam) {
     this.buildWithDefaultValues()
     this.validateParam(param)
     this.setProps(param)
@@ -56,7 +56,7 @@ ArticleModel.prototype.validateParam = (param) => {
     }
 }
 
-ArticleModel.prototype.setProps = function (param = paramInterface) {
+ArticleModel.prototype.setProps = function (param = defaultParam) {
     this.date = param.date
     this.title = param.title
     this.subTitle = param.subTitle

@@ -1,24 +1,20 @@
 import fakeData from './fakeData'
 import ArticleModel from './models/ArticleModel'
+import HeaderModel from './models/HeaderModel'
+
 const ArticleServices = {
-    fetchArticleList() {
-        return new Promise((resolve) => {
-            const articleHeaders = fakeData.fakeFetchArticles.map(article => {
-                return {
-                    banner: article.banner,
-                    date: article.date,
-                    title: article.title,
-                    subTitle: article.subTitle,
-                    description: article.description
-                }
+    async fetchArticleList() {
+        let articleHeaders = [HeaderModel]
+        articleHeaders = fakeData.fakeFetchArticles.map((article = new HeaderModel()) => {
+            return new HeaderModel({
+                banner: article.banner,
+                date: article.date,
+                title: article.title,
+                subTitle: article.subTitle,
+                description: article.description
             })
-
-            console.log(articleHeaders)
-
-            setTimeout(() => {
-                resolve(articleHeaders)
-            }, 2000)
         })
+        return articleHeaders
     },
     async fetchFullArticle(date, title) {
         const findedFullArticle = fakeData.fakeFetchArticles.find(article => article.date === date && article.title === title)
