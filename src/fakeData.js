@@ -2,8 +2,8 @@ export default {
     fakeFetchArticles: [
         {
             title: 'Este es un Título',
-            subTitle: 'Esto es un subtítulo',
-            description: 'Esto es una descripción del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing.',
+            subTitle: 'Esto es un subtítulo. Lorem ipsum dolor sit',
+            description: 'Esto es una descripción del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit dignissim, efficitur dolor sit amet, dignissim nisl. Donec nec velit vel metus rutrum blandit vitae ac massa. Suspendisse ut congue massa, ac feugiat purus. Fusce scelerisque commodo lacus, ut sodales ipsum egestas non. Integer viverra metus velit, quis faucibus orci lacinia maximus. Sed sollicitudin, felis quis facilisi.',
             content: [
                 { type: 'ovTitle', value: 'Esto es un Título' },
                 { type: 'ovSubtitle', value: 'Esto es un Subtitle' },
@@ -36,7 +36,7 @@ export default {
         {
             title: 'Este es otro título',
             subTitle: 'Este es otro subtítulo',
-            description: 'Esto es otra descripción del artículo',
+            description: 'Esto es una descripción del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit dignissim, efficitur dolor sit amet, dignissim nisl. Donec nec velit vel metus rutrum blandit vitae ac massa. Suspendisse ut congue massa, ac feugiat purus. Fusce scelerisque commodo lacus, ut sodales ipsum egestas non. Integer viverra metus velit, quis faucibus orci lacinia maximus. Sed sollicitudin, felis quis facilisi.',
             content: [{ type: 'text', value: 'Esto es el texto' }],
             banner: "https://www.thesprucepets.com/thmb/-dY_W4edPcFENqO9wH-tsIQeotc=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/37348687_179210919505845_8579658165484781568_n-5b69b1b346e0fb00500b0880.jpg",
             date: '2018-03-06',
@@ -45,7 +45,7 @@ export default {
         {
             title: 'Este es un tercer título',
             subTitle: 'Este es un tercer subtítulo',
-            description: 'Esto es una tercera descripción del artículo',
+            description: 'Esto es una descripción del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit dignissim, efficitur dolor sit amet, dignissim nisl. Donec nec velit vel metus rutrum blandit vitae ac massa. Suspendisse ut congue massa, ac feugiat purus. Fusce scelerisque commodo lacus, ut sodales ipsum egestas non. Integer viverra metus velit, quis faucibus orci lacinia maximus. Sed sollicitudin, felis quis facilisi.',
             content: [{ type: 'text', value: 'Esto es el texto' }],
             banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
             date: '2018-04-07',
