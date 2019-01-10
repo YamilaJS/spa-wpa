@@ -3,9 +3,8 @@ body{
 }
 
 body * {
-    
-    /* font-family: Helvetica, Arial, Verdana; */
     font-family: 'Roboto', sans-serif; 
+    /* background: #f5f7f8; */
     text-shadow: 0,9px 0,9px #000000;
     letter-spacing: 0,5px;
     width: 100%;

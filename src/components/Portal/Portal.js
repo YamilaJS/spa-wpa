@@ -1,6 +1,7 @@
+import ovHeader from "@/components/shared/ovHeader";
 export default {
   name: 'portal',
-  components: {},
+  components: {ovHeader},
   props: ['articles'],
 
   methods:{

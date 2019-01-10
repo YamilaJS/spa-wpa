@@ -3,11 +3,13 @@
 }
 .ov-quote-firm p{
     display:block;
-    font: italic 22px Georgia, “Times New Roman”, Times, serif !important;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.2em;
 }
 .ov-quote-firm footer {
     text-align: right;
     padding-right: 10px;
     display: block;
-    font: normal 18px Georgia, “Times New Roman”, Times, serif !important;
+    font-size:16px;
 }
