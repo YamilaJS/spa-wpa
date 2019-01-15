@@ -18,7 +18,6 @@ import {
  ovSummary,
  ovHeader,
  ovDetail,
- ovButtonGosh
 } from '@/components/shared'
 
 export default {
@@ -43,7 +42,6 @@ export default {
     ovFooter, 
     ovHeader,
     ovDetail,
-    ovButtonGosh
   },
   props: ['article']
 }

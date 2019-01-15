@@ -1,28 +1,28 @@
 import Vue from 'vue';
-import OvButtonGoshComponent from './index.vue';
+import ovGoshButtomComponent from './index.vue';
 
 // Here are some Jasmine 2.0 tests, though you can
 // use any test runner / assertion library combo you prefer
-describe('OvButtonGoshComponent', () => {
+describe('ovGoshButtomComponent', () => {
   // Inspect the raw component options
   it('has a created hook', () => {
-    // expect(typeof OvButtonGoshComponent.created).toBe('function');
+    // expect(typeof ovGoshButtomComponent.created).toBe('function');
   })
   // Evaluate the results of functions in
   // the raw component options
   it('sets the correct default data', () => {
-    // expect(typeof OvButtonGoshComponent.data).toBe('function')
-    // const defaultData = OvButtonGoshComponent.data();
+    // expect(typeof ovGoshButtomComponent.data).toBe('function')
+    // const defaultData = ovGoshButtomComponent.data();
     // expect(defaultData.message).toBe('hello!');
   })
   // Inspect the component instance on mount
   it('correctly sets the message when created', () => {
-    // const vm = new Vue(OvButtonGoshComponent).$mount();
+    // const vm = new Vue(ovGoshButtomComponent).$mount();
     // expect(vm.message).toBe('bye!');
   })
   // Mount an instance and inspect the render output
   it('renders the correct message', () => {
-    // const Ctor = Vue.extend(OvButtonGoshComponent);
+    // const Ctor = Vue.extend(ovGoshButtomComponent);
     // const vm = new Ctor().$mount();
     // expect(vm.$el.textContent).toBe('bye!');
   })

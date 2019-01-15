@@ -17,7 +17,7 @@ import ovOrderList from './ovOrderList'
 import ovSummary from './ovSummary'
 import ovHeader from './ovHeader'
 import ovDetail from './ovDetail'
-import ovButtonGosh from './ovButtonGosh'
+import ovGoshButtom from './ovGoshButtom'
 
 export {
     ovBlock,
@@ -39,5 +39,5 @@ export {
     ovSummary,
     ovHeader,
     ovDetail,
-    ovButtonGosh
+    ovGoshButtom
 }

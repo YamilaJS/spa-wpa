@@ -21,7 +21,7 @@ export default {
                 { type: 'ovQuoteFirm', value1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor consectetur justo. Etiam in facilisis purus. Sed placerat erat consequat, gravida turpis dignissim, faucibus velit.', value2: 'Nombre de Autor' },
                 { type: 'ovSeparator' },
                 { type: 'ovImage', value: "https://www.imagenesdegatos.net/wp-content/uploads/2015/12/gato-gris-ojos-naranja-3.jpg" },
-                { type: 'ovButtonGosh', value1: "https://www.google.com.ar/", value2: 'Ver →' },
+                { type: 'ovGoshButtom', value1: "https://www.google.com.ar/", value2: 'Ver' },
 
                 {
                     type: 'ovDetail', value: [
