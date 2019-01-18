@@ -1,0 +1,18 @@
+.ov-float-buttom {
+    position:fixed !important;
+    color: white !important;
+    bottom: 0px;
+right: 0px;
+    background:Coral ;
+    width: auto;
+   font-size: 40px;
+   padding: 0px 10px 0px 10px;
+   box-shadow: 0px 0px 12px black;
+   height: 50px;
+   border-top-left-radius: 30px;
+}
+
+.ov-float-buttom:hover {
+background: orangered;
+transition: all 0.5s;
+}

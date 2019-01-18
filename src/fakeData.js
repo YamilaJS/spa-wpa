@@ -22,7 +22,6 @@ export default {
                 { type: 'ovSeparator' },
                 { type: 'ovImage', value: "https://www.imagenesdegatos.net/wp-content/uploads/2015/12/gato-gris-ojos-naranja-3.jpg" },
                 { type: 'ovGoshButtom', value1: "https://www.google.com.ar/", value2: 'Ver' },
-
                 {
                     type: 'ovDetail', value: [
                         { label: 'Nombre', value: 'Leonardo' },
