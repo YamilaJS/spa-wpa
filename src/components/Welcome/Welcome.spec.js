@@ -1,28 +1,28 @@
 import Vue from 'vue';
-import BannerComponent from './index.vue';
+import WelcomeComponent from './index.vue';
 
 // Here are some Jasmine 2.0 tests, though you can
 // use any test runner / assertion library combo you prefer
-describe('BannerComponent', () => {
+describe('WelcomeComponent', () => {
   // Inspect the raw component options
   it('has a created hook', () => {
-    // expect(typeof BannerComponent.created).toBe('function');
+    // expect(typeof WelcomeComponent.created).toBe('function');
   })
   // Evaluate the results of functions in
   // the raw component options
   it('sets the correct default data', () => {
-    // expect(typeof BannerComponent.data).toBe('function')
-    // const defaultData = BannerComponent.data();
+    // expect(typeof WelcomeComponent.data).toBe('function')
+    // const defaultData = WelcomeComponent.data();
     // expect(defaultData.message).toBe('hello!');
   })
   // Inspect the component instance on mount
   it('correctly sets the message when created', () => {
-    // const vm = new Vue(BannerComponent).$mount();
+    // const vm = new Vue(WelcomeComponent).$mount();
     // expect(vm.message).toBe('bye!');
   })
   // Mount an instance and inspect the render output
   it('renders the correct message', () => {
-    // const Ctor = Vue.extend(BannerComponent);
+    // const Ctor = Vue.extend(WelcomeComponent);
     // const vm = new Ctor().$mount();
     // expect(vm.$el.textContent).toBe('bye!');
   })

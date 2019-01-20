@@ -1,4 +1,3 @@
 export default {
-  name: 'ovFloatButtom',
-  props: ['value'],
+  name: 'ovFloatButtom'
 }

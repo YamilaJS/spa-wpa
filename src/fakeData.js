@@ -17,10 +17,10 @@ export default {
                 { type: 'ovBlock', value: 'Esto es un bloque de texto.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit dignissim, efficitur dolor sit amet, dignissim nisl. Donec nec velit vel metus rutrum blandit vitae ac massa. Suspendisse ut congue massa, ac feugiat purus. Fusce scelerisque commodo lacus, ut sodales ipsum egestas non. Integer viverra metus velit, quis faucibus orci lacinia maximus. Sed sollicitudin, felis quis facilisis auctor, magna justo fermentum arcu, et sagittis ex ante quis mauris. Fusce viverra risus ut lacus cursus, et blandit nibh molestie. Quisque feugiat egestas nisl nec ultricies. Mauris sapien elit, pharetra id nisl eu, tristique venenatis purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer vel gravida nulla.' },
                 { type: 'ovFrame', value: 'Esto es un frame. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor consectetur justo. Etiam in facilisis purus. Sed placerat erat consequat, gravida turpis dignissim, faucibus velit.' },
                 { type: 'ovLink', value1: "https://www.google.com/", value2: 'Link' },
-                { type: 'ovPhoto', value1: "https://purrfectlove.net/wp-content/uploads/2018/01/gingercat.jpg", value2: 'Soy un gato de barrio' },
+                { type: 'ovPhoto', value1: "https://s2.n4g.com/news/1790681_0.jpg", value2: 'Soy un robot de barrio' },
                 { type: 'ovQuoteFirm', value1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor consectetur justo. Etiam in facilisis purus. Sed placerat erat consequat, gravida turpis dignissim, faucibus velit.', value2: 'Nombre de Autor' },
                 { type: 'ovSeparator' },
-                { type: 'ovImage', value: "https://www.imagenesdegatos.net/wp-content/uploads/2015/12/gato-gris-ojos-naranja-3.jpg" },
+                { type: 'ovImage', value: "https://image.freepik.com/vector-gratis/planeta-espacio-fondo-plano-design-vector-e-ilustracion_35136-182.jpg" },
                 { type: 'ovGoshButtom', value1: "https://www.google.com.ar/", value2: 'Ver' },
                 {
                     type: 'ovDetail', value: [
@@ -30,7 +30,7 @@ export default {
                     ]
                 }
             ],
-            banner: "http://www.caribeviaggi.com/wp-content/uploads/2017/03/cuba-hd-streets.jpg",
+            banner: "https://i.pinimg.com/originals/54/f5/3f/54f53fa4fd47f55b64580dbf3ab53e83.jpg",
             date: '2018-05-12',
             firm: 'Esto es una firma'
         },
@@ -39,7 +39,7 @@ export default {
             subTitle: 'Este es otro subtítulo',
             description: 'Esto es una descripción del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit dignissim, efficitur dolor sit amet, dignissim nisl. Donec nec velit vel metus rutrum blandit vitae ac massa. Suspendisse ut congue massa, ac feugiat purus. Fusce scelerisque commodo lacus, ut sodales ipsum egestas non. Integer viverra metus velit, quis faucibus orci lacinia maximus. Sed sollicitudin, felis quis facilisi.',
             content: [{ type: 'text', value: 'Esto es el texto' }],
-            banner: "https://www.thesprucepets.com/thmb/-dY_W4edPcFENqO9wH-tsIQeotc=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/37348687_179210919505845_8579658165484781568_n-5b69b1b346e0fb00500b0880.jpg",
+            banner: "https://superdevresources.com/wp-content/uploads/2017/11/free-flat-space-background.jpg",
             date: '2018-03-06',
             firm: 'Esto es una firma'
         },
@@ -48,7 +48,7 @@ export default {
             subTitle: 'Este es un tercer subtítulo',
             description: 'Esto es una descripción del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit dignissim, efficitur dolor sit amet, dignissim nisl. Donec nec velit vel metus rutrum blandit vitae ac massa. Suspendisse ut congue massa, ac feugiat purus. Fusce scelerisque commodo lacus, ut sodales ipsum egestas non. Integer viverra metus velit, quis faucibus orci lacinia maximus. Sed sollicitudin, felis quis facilisi.',
             content: [{ type: 'text', value: 'Esto es el texto' }],
-            banner: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/galaxy-cat-universe-kitten-launch-------------johnnie-art.jpg",
+            banner: "https://pbs.twimg.com/media/DYKKRJlW0AErBGc.jpg",
             date: '2018-04-07',
             firm: 'Esto es una firma'
         }
