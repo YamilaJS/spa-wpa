@@ -5,9 +5,10 @@
 import { mapActions, mapState } from "vuex";
 import Portal from "@/components/Portal";
 
+
 export default {
   components: {
-    Portal
+    Portal,
   },
   methods: {
     ...mapActions(["loadArticleList"])
